@@ -139,24 +139,6 @@ app.get('/health', function (req, res, next) {
     
 });
 
-// テスト用・消してもいいよ
-// app.get('/eat1', function (req, res, next) {
-//     var query = "\
-//     select t.topic_id, t.topic_title, t.content, t.author\
-//     from topic t \
-//     where t.category_id = 'ca004';\
-//     ";
-//         console.log("DBG:" + query);
-//     db.all(query, {}, function (err, rows) {
-//         if (err) {
-//             console.log("ERROR: " + err.message);
-//         }
-//         res.render('test', { // ここでtest.pugを返す
-//             results: rows
-//         })
-//     }) 
-// });
-
 app.get('/quiz', function (req, res, next) {
     var query = "\
     select q.quiz_id, q.quiz_title, q.content\
@@ -167,7 +149,7 @@ app.get('/quiz', function (req, res, next) {
         if (err) {
             console.log("ERROR: " + err.message);
         }
-        res.render('test', { // ここでtest.pugを返す
+        res.render('quiz', {
             results: rows
         })
     }) 
