@@ -1,0 +1,28 @@
+html
+    head
+        link(ref="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons")
+        //- link(rel="stylesheet" href="css/materialize.min.css" media="screen,projection")
+        link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    body   
+        ul(class="nav nav-tabs nav-fill") 
+            li(class="nav-item"): a(class="nav-link  active" href="./" id="top" style="background-color:#ff7fff;") トップ
+            li(class="nav-item"): a(class="nav-link  active" href="./" id="pop" style="background-color:#ff7fbf;") 人気
+            li(class="nav-item"): a(class="nav-link" href="./artist" id="artist" style="background-color:#c184ff;") 芸能
+            li(class="nav-item"): a(class="nav-link" href="./news" id="news" style="background-color:#7fffff;") ニュース
+            li(class="nav-item"): a(class="nav-link" href="./economics" id="economics" style="background-color:#bfff7f;") 政治
+            li(class="nav-item"): a(class="nav-link" href="./eat" id="eat" style="background-color:#ffff7f;") グルメ
+            li(class="nav-item"): a(class="nav-link" href="./quiz" id="quiz" style="background-color:#ffbf7f;") クイズ  
+        script(type="text/javascript" src="js/materialize.min.js")
+        div(class="container")
+            ul(class="list-group")
+            each row in results 
+                a(href="" class="list-group-item list-group-item-action flex-column align-items-start")
+                    div(class="media")
+                        img(class="d-flex align-self-start mr-3" src="img/kaeru.jpg" alt="image" style="width: 70px;")     
+                        div(class="media-body d-flex w-100 justify-content-between")
+                            h5(class="mb-1") #{row['quiz_title']}
+                            p(class="mb-1") #{row['content']}
+                            //- small #{row['author']}
+
+        
