@@ -1,7 +1,9 @@
-# メンバー
+# ochaDB
+
+## メンバー
 [@NamikoToriyama](https://github.com/NamikoToriyama), [@nonnonno](https://github.com/nonnonno)
 
-# application
+## application
 アプリケーション名：gunosy
 
 # 最初の設定
@@ -46,4 +48,4 @@
   * URLが指定された時に何を動かして何を返せばいいかが書かれている
 * views/index.pug
   * http://localhost:3000 にアクセスした時に表示されるHTML（をpugでシンプルに書いたもの）
-# ochaDB
+
