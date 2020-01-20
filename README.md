@@ -1,6 +1,9 @@
 # メンバー
 [@NamikoToriyama](https://github.com/NamikoToriyama), [@nonnonno](https://github.com/nonnonno)
 
+# application
+アプリケーション名：gunosy
+
 # 最初の設定
 ## 大学の学科計算機室で動かす場合
  ~/.bash_profileというファイルを開き（なければ作る）、以下の１行を足す
